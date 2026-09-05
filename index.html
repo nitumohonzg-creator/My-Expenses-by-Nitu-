@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Expenses by Nitu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>My Expenses by Nitu</h1>
+            <p>Smart Daily Tracker</p>
+        </header>
+
+        <!-- Dashboard Summary -->
+        <div class="dashboard">
+            <div class="card total-expense">
+                <h3>Total Expenses</h3>
+                <h2 id="total-expense">₹0</h2>
+            </div>
+            <div class="card udhar-given">
+                <h3>Udhar Diya (Lent)</h3>
+                <h2 id="udhar-given">₹0</h2>
+            </div>
+            <div class="card udhar-taken">
+                <h3>Udhar Liya (Borrowed)</h3>
+                <h2 id="udhar-taken">₹0</h2>
+            </div>
+        </div>
+
+        <!-- Add Transaction Section -->
+        <div class="form-container">
+            <h2>Add New Entry</h2>
+            <form id="transaction-form">
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Type</label>
+                    <select id="type" required>
+                        <option value="expense">Kharcha (Expense)</option>
+                        <option value="lent">Udhar Diya (Lent)</option>
+                        <option value="borrowed">Udhar Liya (Borrowed)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Category / Person Name</label>
+                    <input type="text" id="details" placeholder="E.g., Food, Rahul, Rent" required>
+                </div>
+                <div class="form-group">
+                    <label>Amount (₹)</label>
+                    <input type="number" id="amount" placeholder="0" required>
+                </div>
+                <button type="submit" class="btn">Add Record</button>
+            </form>
+        </div>
+
+        <!-- History Section -->
+        <div class="history-container">
+            <h2>Recent History</h2>
+            <ul id="history-list">
+                <!-- Transactions will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
