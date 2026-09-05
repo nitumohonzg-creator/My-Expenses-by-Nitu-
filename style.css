@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Dashboard Cards */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid #3498db;
+}
+
+.card.total-expense { border-color: #e74c3c; }
+.card.udhar-given { border-color: #2ecc71; }
+.card.udhar-taken { border-color: #f1c40f; }
+
+.card h3 {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+/* Forms */
+.form-container, .history-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #34495e;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* History List */
+#history-list {
+    list-style: none;
+}
+
+#history-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #bdc3c7;
+}
+
+.type-expense { border-color: #e74c3c !important; }
+.type-lent { border-color: #2ecc71 !important; }
+.type-borrowed { border-color: #f1c40f !important; }
+
+.history-details strong {
+    display: block;
+    color: #2c3e50;
+}
+.history-date {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+.history-amount {
+    font-weight: bold;
+    font-size: 16px;
+}
